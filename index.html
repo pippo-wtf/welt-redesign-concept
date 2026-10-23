@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#003A5A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="color-scheme" content="light">
+  <title>WELT Redesign – Designkonzept</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body class="locked">
+  <div class="gate" id="gate">
+    <form class="gate-card" id="gate-form">
+      <span class="wordmark gate-mark">WELT</span>
+      <p class="gate-title">App-Redesign · Designkonzept</p>
+      <p class="gate-note">Interner Entwurf für das WELT-Team. Kein offizielles WELT-Produkt.</p>
+      <input id="gate-code" type="password" autocomplete="off" placeholder="Zugangscode" aria-label="Zugangscode">
+      <button type="submit">Öffnen</button>
+      <p class="gate-error" id="gate-error" role="alert"></p>
+    </form>
+  </div>
+  <main class="phone" aria-label="WELT Nachrichten-App">
+    <div class="status-bar"><span>9:41</span><div class="status-icons" aria-label="Mobilfunk, WLAN, Batterie"><svg viewBox="0 0 20 14" aria-hidden="true"><path d="M1 13V9h3v4zm5 0V6h3v7zm5 0V3h3v10zm5 0V0h3v13z" fill="currentColor" stroke="none"/></svg><svg viewBox="0 0 20 16" aria-hidden="true"><path d="M2 5a12 12 0 0 1 16 0M5 8a8 8 0 0 1 10 0m-7 3a3 3 0 0 1 4 0"/><circle cx="10" cy="14" r="1" fill="currentColor" stroke="none"/></svg><svg viewBox="0 0 28 14" aria-hidden="true"><rect x="1" y="1" width="23" height="12" rx="3"/><path d="M26 5v4"/><rect x="3" y="3" width="19" height="8" rx="1" fill="currentColor" stroke="none"/></svg></div></div>
+    <header class="app-header"><span class="wordmark" aria-label="WELT">WELT</span><div class="header-actions"><button class="icon-button" data-toast aria-label="Live-TV" data-icon="tv"></button><button class="icon-button notification" data-toast aria-label="Benachrichtigungen" data-icon="bell"></button></div></header>
+    <nav class="chips" aria-label="Nachrichtenkategorien"></nav>
+    <section class="feed" aria-label="Top News" tabindex="-1"></section>
+    <nav class="tab-bar" aria-label="Hauptnavigation"></nav>
+    <section class="article-view" aria-label="Artikel" inert aria-hidden="true"></section>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <div class="home-indicator" aria-hidden="true"></div>
+  </main>
+  <span class="version"></span>
+</body>
+</html>
